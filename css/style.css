@@ -1,0 +1,67 @@
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 400px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    button {
+      transition: 0.5s;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #0033A0, #1B1F50, #002C7F);
+    }
+    
+    button:active {
+      transform: scale(0.9);
+    }
+
+    form {
+      background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/408fd07f-2369-407d-a6db-724beb218ddc/dg7govr-75947b8b-06d2-4deb-8e95-a6d04dfad830.jpg/v1/fill/w_800,h_1000,q_70,strp/uefa_champions_league_wallpaper_by_jafarjeef_dg7govr-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzQwOGZkMDdmLTIzNjktNDA3ZC1hNmRiLTcyNGJlYjIxOGRkY1wvZGc3Z292ci03NTk0N2I4Yi0wNmQyLTRkZWItOGU5NS1hNmQwNGRmYWQ4MzAuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.pFewpM8_sbQq_PQnQ0wzAK_0VtrR_TJKLK6K2hJd1_w');
+      background-repeat: no-repeat;
+    }
+
+    .resultForm {
+      background: url('https://www.scisports.com/wp-content/uploads/2018/10/Stadium-background-e1539010664517-1280x710.jpg');
+      background-repeat: no-repeat;
+    }
+
+    .formInput, .filters button, .audio-controls button {
+      margin: 5px 0;
+  }
+
+  .title {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+  }

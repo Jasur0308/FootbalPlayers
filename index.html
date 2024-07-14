@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('https://img.freepik.com/premium-photo/soccer-stadium-night-neon-background_470436-1628.jpg')] bg-cover">
+    <div class="football__players w-full min-h-screen max-w-[800px] mx-auto flex flex-col py-[50px] items-center">
+        <div class="audio-controls">
+            <audio id="championsLeagueAudio" src="./images/audio.mp3" preload="auto"></audio>
+            <button id="playButton" class="p-[7px] rounded-lg bg-blue-900">Play Music</button>
+            <button id="stopButton" class="p-[7px] rounded-lg bg-blue-900">Stop Music</button>
+        </div>
+        <h3 class="title text-[48px] w-full text-center font-bold text-white">The best team of the World!</h3>
+        <div class="swiper mySwiper my-[50px] rounded-lg">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://img.uefa.com/imgml/TP/players/3/2024/cutoff/250128377.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/133e6c55-9a73-40e6-ad75-1eba073ae34d/dfzskp7-e37709dd-eceb-4d6f-851f-9eed294cb475.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEzM2U2YzU1LTlhNzMtNDBlNi1hZDc1LTFlYmEwNzNhZTM0ZFwvZGZ6c2twNy1lMzc3MDlkZC1lY2ViLTRkNmYtODUxZi05ZWVkMjk0Y2I0NzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gzNieEu6n50TEUH1M5Ur9PL4NMPUPqn6XNUTjLyVH30" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://img.uefa.com/imgml/TP/players/3/2024/cutoff/250076574.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://sportrenders.com/wp-content/uploads/2023/10/Rodrygo-Imagen-PNG-Brasil-Seleccion-Sport-Render.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://fedevalverde.es/wp-content/uploads/2021/01/fede-auf-v2-1024x1024.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://img.uefa.com/imgml/TP/players/3/2024/cutoff/250105244.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://img.uefa.com/imgml/TP/players/3/2024/cutoff/250024448.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://img.uefa.com/imgml/TP/players/3/2024/cutoff/250112803.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://copaamerica.com/_next/image?url=%2Fplayers%2Fbrasil%2Fbrasil-03.png&w=640&q=75" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://img.uefa.com/imgml/TP/players/3/2024/cutoff/250028211.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.pinimg.com/originals/9b/59/8e/9b598e9f662c53f9f1b7a3e1609fb25c.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <form id="footballPlayerForm" class="flex flex-col max-w-[700px] w-full h-full gap-[24px] bg-white p-[20px] rounded-md shadow-lg form">
+            <input id="playerCountry" type="text" placeholder="Country" class="h-[50px] flex justify-center items-center px-[10px] py-[18px] border-[2px] rounded-md shadow-md formInput w-full">
+            <input id="playerClub" type="text" placeholder="Club" class="h-[50px] flex justify-center items-center px-[10px] py-[18px] border-[2px] rounded-md shadow-lg formInput w-full">
+            <input id="playerName" type="text" placeholder="Name" class="h-[50px] flex justify-center items-center px-[10px] py-[18px] border-[2px] rounded-md shadow-md formInput w-full">
+            <input id="playerAge" type="number" placeholder="Age" class="h-[50px] flex justify-center items-center px-[10px] py-[18px] border-[2px] rounded-md shadow-md formInput w-full">
+            <select id="playerPosition" class="flex justify-center items-center px-[10px] py-[18px] border-[2px] rounded-md shadow-md formInput w-full">
+                <option selected disabled value="Choose position">Choose position</option>
+                <option value="Forward">Forward</option>
+                <option value="Midfielder">Midfielder</option>
+                <option value="Defender">Defender</option>
+                <option value="Goalkeeper">Goalkeeper</option>
+            </select>
+            <button type="submit" id="addPlayer" class="flex items-center justify-center px-[10px] py-[15px] rounded-md border-none shadow-md cursor-pointer w-full bg-red-500 text-white">Add Player</button>
+        </form>
+
+        <div class="bg-white w-full max-w-[700px] mt-[50px] rounded-md p-[20px] resultForm">
+            <h3 class="text-[26px] text-white font-serif">Players</h3>
+            <div class="filters flex gap-[10px] justify-between text-white font-serif" id="playerFilter">
+                <button class="p-[7px] rounded-lg w-full bg-blue-900" type="submit" id="countryFilter">Filter country</button>
+                <button class="p-[7px] rounded-lg w-full bg-blue-900" type="submit" id="clubFilter">Filter club</button>
+                <button class="p-[7px] rounded-lg w-full bg-blue-900" type="submit" id="ageFilter">Filter age</button>
+                <button class="p-[7px] rounded-lg w-full bg-blue-900" type="submit" id="positionFilter">Filter position</button>
+            </div>
+            <div id="playerList" class="flex gap-[10px] flex-col mt-[20px]"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/app.js"></script>
+</body>
+</html>
